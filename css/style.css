@@ -53,6 +53,18 @@ body {
     text-align: justify;
 }
 
+.da{
+    text-align: center;
+}
+
+.di{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
