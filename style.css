@@ -21,7 +21,7 @@ html {
     align-items: center;
     padding: 20px 40px;
     flex-wrap: wrap;
-    margin-top: -50px;
+    margin-top: -60px;
     
 }
 
@@ -38,12 +38,12 @@ html {
 }
 
 .logo {
-    
+
     margin-left: auto;
 }
 
 .logo img {
-    height: 170px;
+    height: 200px;
     width: auto;
 }
 
