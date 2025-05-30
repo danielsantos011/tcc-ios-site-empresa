@@ -50,6 +50,7 @@ body {
     max-width: 700px;
     margin: 0 auto 40px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .cards {
@@ -116,6 +117,100 @@ html {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
+/* Seção Sobre - estilo card com ícone */
+.sobre {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sobre-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.sobre-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.sobre-card:hover {
+    transform: translateY(-5px);
+}
+
+.sobre-card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre-card h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.sobre-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sobre-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004AAD;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Seção Contato */
+.contato {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.form-contato button {
+    background-color: #004AAD;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #00398c;
+}
+
 
 @media (max-width: 768px) {
     .nav {
