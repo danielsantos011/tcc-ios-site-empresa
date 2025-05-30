@@ -38,6 +38,7 @@ html {
 }
 
 .logo {
+    
     margin-left: auto;
 }
 
@@ -45,6 +46,8 @@ html {
     height: 170px;
     width: auto;
 }
+
+
 
 /* ====== SEÇÕES COMUNS ====== */
 .servicos,
@@ -63,6 +66,8 @@ html {
     line-height: 1.5;
     text-align: justify;
 }
+
+
 
 /* ====== CARDS ====== */
 .cards {
@@ -197,6 +202,8 @@ html {
 .form-contato button:hover {
     background-color: #00398c;
 }
+
+
 
 .da{
     text-align: center;

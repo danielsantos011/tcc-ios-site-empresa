@@ -18,18 +18,20 @@
 <body>
 
     <!-- Menu de navegação -->
-    <header class="nav">
-        <div class="menu">
-            <div class="opcoes"><a href="#inicio">Início</a></div>
-            <div class="opcoes"><a href="#servicos">Serviços</a></div>
-            <div class="opcoes"><a href="#como-trabalhamos">Como Trabalhamos</a></div>
-            <div class="opcoes"><a href="#sobre">Sobre</a></div>
-            <div class="opcoes"><a href="#contato">Contato</a></div>
-        </div>
-        <div class="logo">
-            <img src="/assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
-        </div>
-    </header>
+ <header class="nav">
+  <div class="menu" id="menu">
+    <div class="opcoes"><a href="#inicio">Início</a></div>
+    <div class="opcoes"><a href="#servicos">Serviços</a></div>
+    <div class="opcoes"><a href="#como-trabalhamos">Como Trabalhamos</a></div>
+    <div class="opcoes"><a href="#sobre">Sobre</a></div>
+    <div class="opcoes"><a href="#contato">Contato</a></div>
+  </div>
+  
+  <div class="logo">
+    <img src="/assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
+  </div>
+</header>
+
 
     <!-- Seção Início -->
     <section id="inicio">
@@ -185,7 +187,14 @@
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
 
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
 
 </body>
 
