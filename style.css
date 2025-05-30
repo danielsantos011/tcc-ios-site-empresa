@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ====== NAVEGAÇÃO ====== */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ html {
 
 
 
-/* ====== SEÇÕES COMUNS ====== */
+
 .servicos,
 .como-trabalhamos,
 .sobre,
@@ -69,7 +69,6 @@ html {
 
 
 
-/* ====== CARDS ====== */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +116,12 @@ html {
     margin-left: 5px;
 }
 
-/* ====== SOBRE ====== */
+.sobre p{
+    margin-bottom: 100px;
+    
+}
+
+
 .sobre-cards {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +170,6 @@ html {
     text-decoration: none;
 }
 
-/* ====== CONTATO ====== */
 .contato {
     background-color: #f7f7f7;
 }
@@ -214,6 +217,10 @@ html {
 }
 
 .de{
+    text-align: center;
+}
+
+.du{
     text-align: center;
 }
 
@@ -283,7 +290,7 @@ html {
     color: #aaa;
 }
 
-/* Responsivo */
+
 @media (max-width: 600px) {
     .footer-links {
         flex-direction: column;
@@ -297,7 +304,7 @@ html {
 
 
 
-/* Responsividade */
+
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
@@ -319,54 +326,5 @@ html {
 
     .footer-direitos {
         text-align: right;
-    }
-}
-
-
-/* ====== MEDIA QUERY PARA CELULARES ====== */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .logo {
-        align-self: center;
-        margin-top: 20px;
-    }
-
-    .logo img {
-        max-width: 120px;
-        height: auto;
-    }
-
-    .cards,
-    .sobre-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card,
-    .sobre-card {
-        width: 90%;
-        max-width: 320px;
-    }
-
-    .descricao {
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .form-contato {
-        width: 100%;
-        padding: 0 10px;
     }
 }
