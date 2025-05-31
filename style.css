@@ -435,4 +435,5 @@ html {
 
 [vw-access-button] {
   bottom: 15px !important;
+  right: -8px !important;
 }
