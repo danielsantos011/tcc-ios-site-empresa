@@ -313,7 +313,6 @@ html {
   }
 }
 
-/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -384,7 +383,6 @@ html {
 }
 
 
-/* Exibe o menu hambúrguer no mobile */
 @media (max-width: 768px) {
   .hamburguer {
     display: block;
