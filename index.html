@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visão Perifa</title>
-    <link rel="shortcut icon" href="/assets/image/3.png"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/image/3.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
@@ -18,19 +17,24 @@
 <body>
 
     <!-- Menu de navegação -->
- <header class="nav">
-  <div class="menu" id="menu">
-    <div class="opcoes"><a href="#inicio">Início</a></div>
-    <div class="opcoes"><a href="#servicos">Serviços</a></div>
-    <div class="opcoes"><a href="#como-trabalhamos">Como Trabalhamos</a></div>
-    <div class="opcoes"><a href="#sobre">Sobre</a></div>
-    <div class="opcoes"><a href="#contato">Contato</a></div>
-  </div>
-  
-  <div class="logo">
-    <img src="./assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
-  </div>
-</header>
+    <header class="nav">
+        <div class="menu" id="menu">
+            <div class="opcoes"><a href="#inicio">Início</a></div>
+            <div class="opcoes"><a href="#servicos">Serviços</a></div>
+            <div class="opcoes"><a href="#como-trabalhamos">Como Trabalhamos</a></div>
+            <div class="opcoes"><a href="#sobre">Sobre</a></div>
+            <div class="opcoes"><a href="#contato">Contato</a></div>
+        </div>
+
+        <div class="logo">
+            <img src="./assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
+        </div>
+
+        <button class="hamburguer" id="hamburguer" aria-label="Abrir menu de navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
 
 
     <!-- Seção Início -->
@@ -85,7 +89,8 @@
             <div class="card work">
                 <div class="card-conteudo">
                     <h3>Empresas e Organizações</h3>
-                    <p class="du">Nossos serviços ajudam a automatizar processos e melhorar a gestão de marcas no ambiente digital.
+                    <p class="du">Nossos serviços ajudam a automatizar processos e melhorar a gestão de marcas no
+                        ambiente digital.
                     </p>
                 </div>
             </div>
@@ -94,7 +99,8 @@
             <div class="card work">
                 <div class="card-conteudo">
                     <h3>Instituições e Associações</h3>
-                    <p class="du">Desenvolvemos soluções que facilitam a comunicação e presença online de associações nacionais e
+                    <p class="du">Desenvolvemos soluções que facilitam a comunicação e presença online de associações
+                        nacionais e
                         locais.</p>
                 </div>
             </div>
@@ -103,7 +109,8 @@
             <div class="card work">
                 <div class="card-conteudo">
                     <h3>Clubes e Grupos</h3>
-                    <p class="du">Oferecemos identidade visual e sites intuitivos para grupos que buscam profissionalizar sua
+                    <p class="du">Oferecemos identidade visual e sites intuitivos para grupos que buscam
+                        profissionalizar sua
                         atuação.</p>
                 </div>
             </div>
@@ -166,39 +173,55 @@
         </form>
     </section>
     <footer class="footer">
-  <div class="footer-container">
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/visao.perifa/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/vis%C3%A3o-perifa-065135369?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B7Pn9OoFRWqpkGHDUdzhdg%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/visao.perifa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vis%C3%A3o-perifa-065135369?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B7Pn9OoFRWqpkGHDUdzhdg%3D%3D"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <p class="copyright">Copyright ©2025 | Designed by <strong>Visão Perifa</strong></p>
+        </div>
+    </footer>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
 
-    <ul class="footer-links">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
-    <p class="copyright">Copyright ©2025 | Designed by <strong>Visão Perifa</strong></p>
-  </div>
-</footer>
+    <script>
+        const menu = document.getElementById('menu');
+        const hamburguer = document.getElementById('hamburguer');
 
+        hamburguer.addEventListener('click', () => {
+            menu.classList.toggle('ativo');
+        });
+        const opcoes = document.querySelectorAll('.opcoes a');
 
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-
+        opcoes.forEach(opcao => {
+            opcao.addEventListener('click', () => {
+                menu.classList.remove('ativo');
+            });
+        });
+    </script>
 
 </body>
 
