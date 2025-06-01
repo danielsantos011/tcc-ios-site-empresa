@@ -133,11 +133,11 @@
         <h2>Entre em Contato</h2>
         <p class="descricao de">Estamos aqui para transformar suas ideias em realidade. Preencha o formulário abaixo e
             vamos conversar!</p>
-        <form class="form-contato">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+        <form class="form-contato" action="config.php"  method="post">
+            <input type="text" name="Nome" placeholder="Seu nome" required>
+            <input type="email" name="Email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" name="Mensagem" required></textarea>
+            <button type="submit" name="submit">Enviar</button>
         </form>
     </section>
     <footer class="footer">
