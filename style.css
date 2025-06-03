@@ -179,7 +179,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: none;
-  outline: #004AAD;
+  outline: none;
 }
 
 .form-contato button {
