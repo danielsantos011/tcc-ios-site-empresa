@@ -259,6 +259,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: none;
+  outline: none;
 }
 
 .form-contato button {
