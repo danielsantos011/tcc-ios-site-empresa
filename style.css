@@ -178,7 +178,7 @@ html {
   background: #fff;
   border-radius: 20px;
   padding: 15px;
-  width: 160px; /* caixa menor */
+  width: 250px; /* caixa menor */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
   text-align: center;
@@ -189,8 +189,8 @@ html {
 }
 
 .equipe-card img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 4px solid #004aad; 
   
@@ -214,7 +214,7 @@ html {
 /* Responsividade */
 @media (max-width: 768px) {
   .equipe-card {
-    width: 140px;
+    width: 250px;
     padding: 10px;
   }
   
