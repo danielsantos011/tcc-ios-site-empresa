@@ -196,50 +196,6 @@ html {
   
 }
 
-.equipe-card h3 {
-  font-size: 16px;
-  margin: 8px 0 4px;
-  color: #111;
-}
-
-.equipe-card p {
-  font-size: 13px;
-  color: #555;
-}
-
-#daniel img{
-   
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .equipe-card {
-    width: 250px;
-    padding: 10px;
-  }
-  
-  .equipe-card img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .equipe-card h3 {
-    font-size: 14px;
-  }
-  
-  .equipe-card p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .equipe-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
 .contato {
   background-color: #f7f7f7;
 }
