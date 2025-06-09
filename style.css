@@ -59,16 +59,17 @@ html {
 
 
 .como-trabalhamos{
-  background-color: #222222;
+  background-color: #f7f7f7;
 }
 
 .como-trabalhamos h2{
-  color: white;
-  font-size: 24px ;
+  color: black;
+  font-size: 24px;
 }
 
 .como-trabalhamos p{
-  color: white;
+  color: black;
+  text-align: center;
 }
 
 .descricao {
