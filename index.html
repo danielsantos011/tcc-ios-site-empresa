@@ -9,6 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styledark.css">
 </head>
 <body>
     
@@ -23,6 +24,7 @@
         <div class="logo">
             <img src="./assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
         </div>
+
         <button class="hamburguer" id="hamburguer" aria-label="Abrir menu de navegação">
             <i class="fas fa-bars"></i>
         </button>
@@ -53,8 +55,6 @@
     },
   };
 </script>
-
-<!-- Hero Section em Azul Cobalto -->
 <section class="w-full flex flex-col md:flex-row items-center bg-gradient-to-r from-cobalt-600 via-cobalt-700 to-cobalt-800 text-white p-8 md:p-16 animate-fade">
   <div class="w-full md:w-1/2 mb-8 md:mb-0">
     <h2 class="text-sm uppercase tracking-widest">Bem-vindo à Visão Perifa</h2>
@@ -168,6 +168,31 @@
             </div>
         </div>
     </section>
+    <section class="reserve-section">
+  <div class="reserve-content">
+    <small class="step-label">STEP</small>
+    <h2 class="reserve-title">Maximize your returns with a<br>Reserve account that generates.</h2>
+
+    <div class="reserve-cards">
+      <div class="card">
+        <div class="card-number">1</div>
+        <h3>Open your account</h3>
+        <p>Sign up to finpay and set up your account from the dashboard.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">2</div>
+        <h3>Transfer your money</h3>
+        <p>Move money from to another account into and start to earning up.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">3</div>
+        <h3>Watch your balance grow</h3>
+        <p>Accessed instantly and remain insulated from market volatility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
         <p class="descricao de">Estamos aqui para transformar suas ideias em realidade. Preencha o formulário abaixo e
@@ -209,6 +234,7 @@
         </div>
     </div>
 
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
@@ -228,6 +254,9 @@
                 menu.classList.remove('ativo');
             });
         });
+
+
+    
     </script>
 </body>
 
