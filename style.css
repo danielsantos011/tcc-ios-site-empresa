@@ -9,6 +9,7 @@
   --cor--de--fundo: #004aad;
   --cor--hover--hover: #00398c;
   --cor--de--fundo--secundaria: #f7f7f7;
+  --cor--de--text: #222222;
 }
 
 
@@ -81,6 +82,12 @@ background-color: #002e70;
   text-align: center;
 }
 
+.contato h2{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .sobre h2{
   color: #004AAD;
 }
@@ -88,6 +95,8 @@ background-color: #002e70;
 .servicos h2{
   font-size: 24px;
   color: #004AAD;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 
@@ -99,7 +108,9 @@ background-color: #002e70;
 .como-trabalhamos h2{
   color: #004AAD;
   font-size: 24px;
-
+  font-weight: 700;
+  margin-bottom: 10px;
+  
 }
 
 .como-trabalhamos p{
@@ -142,6 +153,10 @@ background-color: #002e70;
   object-fit: cover;
 }
 
+.card-conteudo h3{
+  font-weight: 600;
+}
+
 .card-conteudo {
   padding: 20px;
 }
@@ -150,6 +165,7 @@ background-color: #002e70;
   font-size: 14px;
   color: #333;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .card-conteudo a {
@@ -165,6 +181,8 @@ background-color: #002e70;
 
 .sobre h2{
   font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .sobre p {
@@ -201,6 +219,7 @@ background-color: #002e70;
   font-size: 18px;
   color: #111;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .sobre-card p {
