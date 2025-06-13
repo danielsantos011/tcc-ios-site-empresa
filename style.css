@@ -57,7 +57,7 @@ background-color: #002e70;
 .opcoes a {
   color: #004aad; /* Azul elegante */
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -313,9 +313,116 @@ background-color: #002e70;
   color: #444;
 }
 
+.hr1{
+  margin-bottom: 10px;
+}
+
+.hr2{
+  margin-top: 20px;
+ }
+
+.features {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.features-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.features-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.feature-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #f3f3f3;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+
+.highlight h4,
+.highlight p {
+  color: #000;
+}
+
+.btn.dark {
+  background: #000;
+  color: #fff;
+}
+
+.btn.dark:hover {
+  background: #333;
+}
+
 
 .contato {
-  background-color: #f7f7f7;
+ 
 }
 
 .form-contato {
@@ -539,6 +646,13 @@ background-color: #002e70;
     outline: none;
     padding: 0;
     margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 150px; /* exemplo se o menu for menor */
+  }
 }
 
 
