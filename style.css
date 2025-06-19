@@ -16,7 +16,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -274,7 +273,7 @@ background-color: #002e70;
 
 .depoimento-estatisticas {
   padding: 80px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
   background: white;
 }
@@ -358,7 +357,7 @@ background-color: #002e70;
 .features {
   text-align: center;
   padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 section {
