@@ -23,6 +23,30 @@ html {
   scroll-behavior: smooth;
 }
 
+.container { max-width:1100px; margin:0 auto; padding:0 15px; display:flex; justify-content:space-between; align-items:center; }
+
+.header { background:#333; color:#fff; position:sticky; top:0; z-index:1000; }
+.logo { height:50px; }
+.nav { display:flex; }
+.nav-list { list-style:none; display:flex; gap:20px; }
+.nav-list a { color:#fff; text-decoration:none; font-weight:bold; }
+
+.menu-toggle { display:none; font-size:30px; cursor:pointer; }
+
+.hero { background:#555; color:#fff; padding:100px 20px; text-align:center; }
+.section { padding:60px 20px; text-align:center; }
+.cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.card { background:#eee; padding:20px; flex:1 1 200px; border-radius:8px; }
+footer.footer { background:#222; color:#fff; text-align:center; padding:20px; }
+
+/* Responsividade */
+@media(max-width:768px){
+  .menu-toggle { display:block; }
+  .nav { position:absolute; top:70px; right:0; background:#333; width:100%; max-height:0; overflow:hidden; transition:max-height .3s ease; flex-direction:column; }
+  .nav.active { max-height:300px; }
+  .nav-list { flex-direction:column; padding:20px 0; gap:10px; }
+}
+
 #inicio {
   margin-top: 120px;
 }
@@ -83,13 +107,23 @@ background-color: #002e70;
 }
 
 .contato h2{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
+.contato p{
+  font-size: 16px;
+}
+
 .sobre h2{
   color: #004AAD;
+}
+
+.sobre p{
+  font-size: 20px;
+  color: #111;
+  font-weight: 500;
 }
 
 .servicos h2{
@@ -422,10 +456,6 @@ section {
   background:  #e0e0e0;
 }
 
-
-.contato {
- 
-}
 
 .form-contato {
   max-width: 500px;

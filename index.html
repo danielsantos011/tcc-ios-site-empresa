@@ -13,22 +13,36 @@
 </head>
 <body>
     
-    <header class="nav">
-        <div class="menu" id="menu">
-            <div class="opcoes"><a href="#inicio">Início</a></div>
-            <div class="opcoes"><a href="#servicos">Serviços</a></div>
-            <div class="opcoes"><a href="#sobre">Sobre</a></div>
-            <div class="opcoes"><a href="#ajuda">Ajuda</a></div>
-            <div class="opcoes"><a href="#contato">Contato</a></div>
-        </div>
-        <div class="logo">
-            <img src="./assets/image/1__1_-removebg-preview.png" alt="Logo Visão Perifa">
-        </div>
+     <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md fixed top-0 left-0 right-0 bg-white z-50">
+    <div class="flex items-center space-x-4">
+      <img src="./assets/image/1__1_-removebg-preview.png" alt="Logo Visão Web" class="w-20 h-20" />
+      <span class="text-xl font-bold">
+        <span class="text-visao">Visão</span>
+        <span class="text-perifa"> Perifa</span>
+      </span>
+    </div>
+    <nav id="menu" class="hidden md:flex space-x-6">
+      <a href="#inicio" class="text-gray-700 hover:text-perifa">Início</a>
+      <a href="#servicos" class="text-gray-700 hover:text-perifa">Serviços</a>
+      <a href="#sobre" class="text-gray-700 hover:text-perifa">Sobre</a>
+      <a href="#ajuda" class="text-gray-700 hover:text-perifa">Ajuda</a>
+      <a href="#contato" class="text-gray-700 hover:text-perifa">Contato</a>
+    </nav>
+    <button class="md:hidden text-visao text-2xl" id="hamburguer">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
 
-        <button class="hamburguer" id="hamburguer" aria-label="Abrir menu de navegação">
-            <i class="fas fa-bars"></i>
-        </button>
-    </header>
+  <!-- Mobile Menu -->
+  <div id="menuMobile" class="md:hidden hidden flex-col bg-white p-4 space-y-4 fixed top-16 left-0 right-0 shadow-md z-40">
+    <a href="#inicio" class="block text-gray-700 hover:text-visao">Início</a>
+    <a href="#servicos" class="block text-gray-700 hover:text-visao">Serviços</a>
+    <a href="#sobre" class="block text-gray-700 hover:text-visao">Sobre</a>
+    <a href="#ajuda" class="block text-gray-700 hover:text-visao">Ajuda</a>
+    <a href="#contato" class="block text-gray-700 hover:text-visao">Contato</a>
+  </div>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -40,6 +54,8 @@
             700: '#003D94',
             800: '#002D75',
           },
+          visao: 'black',
+          perifa: '#004aad'
         },
         animation: {
           fade: "fadeIn 1.5s ease-out both",
@@ -68,9 +84,7 @@
     <section id="servicos" >
     </section>
 <section class="features">
-  <h3 class="features-label">O que oferecemos
 
-</h3>
   <h2 class="features-title">
     Criamos soluções digitais<br>
   seguras, acessíveis e eficientes
@@ -219,84 +233,49 @@
 </form>
 
     </section>
-    <footer class="bg-white text-gray-700 pt-12 pb-6 px-6 border-t">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-    <!-- Logo e descrição -->
-    <div class="md:col-span-1">
-      <h2 class="text-xl font-semibold mb-2">Visão Perifa</h2>
-      <p class="text-sm text-gray-600">
-        Ajudamos você a alcançar seus objetivos financeiros com orientação, tecnologia e soluções seguras.
-      </p>
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-gray-700 text-sm pt-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 pb-10">
+      <div>
+        <h3 class="font-semibold text-lg mb-2">Visão Perifa</h3>
+        <p>Ajudamos você a alcançar seus objetivos digitais com soluções modernas e acessíveis.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Sobre</h4>
+        <ul>
+          <li>Nossa História</li>
+          <li>Equipe</li>
+          <li>Missão e Visão</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Serviços</h4>
+        <ul>
+          <li>Criação de Site</li>
+          <li>Design Visual</li>
+          <li>Consultoria</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Ajuda</h4>
+        <ul>
+          <li>FAQ</li>
+          <li>Central de Suporte</li>
+          <li>Acessibilidade</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Redes</h4>
+        <div class="flex space-x-4 text-lg">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5511930881957"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
+    <div class="text-center py-4 border-t">© 2025 Visão Perifa. Todos os direitos reservados.</div>
+  </footer>
 
-    <!-- About -->
-    <div>
-      <h3 class="font-semibold mb-2">Sobre</h3>
-      <ul class="space-y-1 text-sm text-gray-600">
-        <li><a href="#">Nossa História</a></li>
-        <li><a href="#">Equipe</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Missão e Valores</a></li>
-      </ul>
-    </div>
-
-    <!-- Produtos -->
-    <div>
-      <h3 class="font-semibold mb-2">Serviços</h3>
-      <ul class="space-y-1 text-sm text-gray-600">
-        <li><a href="#">Criação de Site</a></li>
-        <li><a href="#">Design Visual</a></li>
-        <li><a href="#">Consultoria Digital</a></li>
-        <li><a href="#">Rede Social</a></li>
-      </ul>
-    </div>
-
-    <!-- Recursos -->
-    <div>
-      <h3 class="font-semibold mb-2">Recursos</h3>
-      <ul class="space-y-1 text-sm text-gray-600">
-        <li><a href="#">Central de Ajuda</a></li>
-        <li><a href="#">Acessibilidade</a></li>
-        <li><a href="#">Depoimentos</a></li>
-        <li><a href="#">Termos e Políticas</a></li>
-      </ul>
-    </div>
-
-    <!-- Suporte -->
-    <div>
-      <h3 class="font-semibold mb-2">Suporte</h3>
-      <ul class="space-y-1 text-sm text-gray-600">
-        <li><a href="#">Atendimento ao Cliente</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Reportar Problema</a></li>
-        <li><a href="#">Privacidade e Segurança</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Linha divisória -->
-  <footer class="border-t mt-10 pt-4 text-sm text-gray-500">
-  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-    
-    <!-- Redes Sociais à esquerda -->
-    <div class="flex space-x-4 mb-4 md:mb-0">
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
-      <a href="https://www.instagram.com/visao.perifa?igsh=MTRxcHhzc24zOW43bg==" aria-label="Twitter"><i class="fab fa-instagram text-xl"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=5511930881957" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl"></i></a>
-    </div>
-
-    <!-- Copyright no centro -->
-    <p class="text-center mb-4 md:mb-0">© 2025 Visão Perifa</p>
-
-    <!-- Políticas à direita -->
-    <div class="flex space-x-4">
-      <a href="#" class="hover:text-gray-800">Política de Privacidade</a>
-      <a href="#" class="hover:text-gray-800">Cookies</a>
-      <a href="#" class="hover:text-gray-800">Legal</a>
-    </div>
-    
-  </div>
-</footer>
 
 
 
@@ -308,29 +287,12 @@
         </div>
     </div>
 
-
+   <script src="./js.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-    <script>
-        const menu = document.getElementById('menu');
-        const hamburguer = document.getElementById('hamburguer');
-
-        hamburguer.addEventListener('click', () => {
-            menu.classList.toggle('ativo');
-        });
-        const opcoes = document.querySelectorAll('.opcoes a');
-
-        opcoes.forEach(opcao => {
-            opcao.addEventListener('click', () => {
-                menu.classList.remove('ativo');
-            });
-        });
-
-
-    
     </script>
     <button id="btnVoltarTopo" title="Voltar ao topo">↑</button>
 
@@ -352,12 +314,27 @@
       });
     });
   </script>
+  <script>
+    const hamburguer = document.getElementById('hamburguer');
+    const menuMobile = document.getElementById('menuMobile');
+
+    hamburguer.addEventListener('click', () => {
+      menuMobile.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#menuMobile a').forEach(link => {
+      link.addEventListener('click', () => menuMobile.classList.add('hidden'));
+    });
+
+    const btnTopo = document.getElementById("btnVoltarTopo");
+    window.addEventListener("scroll", () => {
+      btnTopo.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btnTopo.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
   
 </body>
-</html>
-
-
-
-</body>
-
 </html>
