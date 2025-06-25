@@ -759,3 +759,10 @@ section {
     #btnVoltarTopo:hover {
       background-color: #00398c;
     }
+
+     #userway_access_button {
+    bottom: -1000px !important; /* ajusta para baixo, valor pode ser alterado */
+    right: 1000px !important;  /* distância da direita, igual ao padrão */
+    z-index: 10000 !important; /* para garantir que fique acima */
+}
+
