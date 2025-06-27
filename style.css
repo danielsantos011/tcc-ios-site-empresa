@@ -10,6 +10,7 @@
   --cor--hover--hover: #00398c;
   --cor--de--fundo--secundaria: #f7f7f7;
   --cor--de--text: #222222;
+  --branco--: white;
 }
 
 
@@ -429,11 +430,11 @@ section {
 .btn {
   display: inline-block;
   padding: 10px 16px;
-  background: #f3f3f3;
+  background: var(--cor--de--fundo);
   border-radius: 6px;
   font-size: 14px;
   text-decoration: none;
-  color: #000;
+  color: var(--branco--);
   font-weight: 500;
   transition: background 0.2s;
 }
