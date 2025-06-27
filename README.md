@@ -1,5 +1,7 @@
 # Visão Perifa
 
+![Visão Perifa - Print do Site](./assets/image.png)
+
 ## Sobre o Projeto
 
 **Visão Perifa** é uma empresa digital que nasceu para levar transformação, inovação e acessibilidade digital para as periferias. Nosso foco é empoderar pequenos empreendedores, organizações sociais e iniciativas culturais periféricas por meio de soluções digitais modernas, inclusivas e estratégicas.
