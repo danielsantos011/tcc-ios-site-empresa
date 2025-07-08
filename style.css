@@ -116,21 +116,11 @@ background-color: #002e70;
   font-size: 16px;
 }
 
-.sobre h2{
-  color: #004AAD;
-}
 
 .sobre p{
   font-size: 20px;
   color: #111;
   font-weight: 500;
-}
-
-.servicos h2{
-  font-size: 24px;
-  color: #004AAD;
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 
 
@@ -213,11 +203,6 @@ background-color: #002e70;
   margin-left: 5px;
 }
 
-.sobre h2{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
 
 .sobre p {
   margin-bottom: 100px;
