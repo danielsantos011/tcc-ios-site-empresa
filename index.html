@@ -370,29 +370,6 @@
     <button type="submit">Enviar</button>
   </form>
 </section>
-<script>
-async function enviarOrcamento() {
-  const email = prompt("Digite seu e-mail:");
-  const plano = prompt("Qual plano você quer? (Básico, Intermediário ou Premium)");
-  const quantidade = prompt("Quantas unidades?");
-
-  const resposta = await fetch('http://localhost:3000/enviar-orcamento', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, plano, quantidade })
-  });
-
-  const resultado = await resposta.json();
-  alert(resultado.message);
-}
-</script>
-
-<button
-  onclick="enviarOrcamento()"
-  class="bg-gradient-to-r from-green-600 to-green-400 hover:from-green-700 hover:to-green-500 text-white font-semibold py-2 px-6 rounded-xl shadow-md transition-all duration-300"
->
-  Solicitar Orçamento
-</button>
 
   <!-- Footer -->
   <footer class="bg-gray-100 text-gray-700 text-sm pt-10 px-6">
@@ -543,6 +520,38 @@ themeToggleBtn.addEventListener('click', function() {
 </script>
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y7P1NBNiDKlVskfB9-APW";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<script>
+async function enviarOrcamento() {
+  const email = prompt("Digite seu e-mail:");
+  const plano = prompt("Qual plano você quer? (Básico, Intermediário ou Premium)");
+  const quantidade = prompt("Quantas unidades?");
+
+  // Validação rápida (opcional)
+  if (!email || !plano || !quantidade) {
+    alert("Por favor, preencha todas as informações.");
+    return;
+  }
+
+  try {
+    const resposta = await fetch('https://tcc-ios-site-empresa.onrender.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, plano, quantidade })
+    });
+
+    const resultado = await resposta.json();
+
+    if (resposta.ok) {
+      alert(resultado.message);
+    } else {
+      alert("Erro ao enviar orçamento: " + resultado.message);
+    }
+  } catch (error) {
+    alert("Erro de conexão com o servidor.");
+    console.error(error);
+  }
+}
 </script>
 
   
